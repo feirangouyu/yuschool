@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雨校</title>
+
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/content.css">
+    <link rel="stylesheet" href="style/popup.css">
+    <link rel="stylesheet" href="style/modular.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div>
+            <p class="iconfont">&#xe76a;</p>
+        </div>
+        <div>
+            <a href="#">新建统一认证页面</a> 
+        </div>
+        <div class="on">
+            <div class="login-switch" id="WEB" onclick="page(0)">WEB</div>  
+            <div ></div> 
+        </div>
+        <div class="shut">
+            <div class="login-switch" id="H5" onclick="page(1)">H5</div>  
+            <div></div> 
+        </div>
+        <button id="preview" onclick="preview(this)">预览</button>
+        <button id="preserve" onclick="preserve(this)">保存</button>
+    </div>
+    
+    <!-- 内容区 -->
+    <div class="content">
+        
+        <!-- web登录窗口 -->
+        <div class="login-window web">
+            <!-- 一.LOGO -->
+            <div class="logo logo-content cont">
+                <img src="" >
+                <button class="button-set">点击设置</button>
+            </div>
+            <!-- 二.背景图 -->
+            <div class="background background-content cont">
+                <button class="button-set">点击设置登录页面背景图</button>
+            </div>
+            <!-- 三.标题 -->
+            <div id="title-box">
+                <div class="title title-content title-fir cont" >
+                    <span>雨校</span>    
+                    <button class="button-set">点击设置</button>
+                </div><br/>
+                <div class="title  title-content title-sec cont">
+                    <span>yushcool.com</span> 
+                    <button class="button-set">点击设置</button>
+                </div>
+            </div>
+            <div class="title  title-content title-thi cont">
+                <span > 感知教育 , 润泽成长 </span> 
+                <button class="button-set">点击设置</button>
+            </div>
+            <!-- 四.链接 -->
+            <div class="link link-content cont">
+                <a href="http://wap.snslearn.com/web/Portal/page" target="_blank">返回首页</a>
+                <a href="http://wap.snslearn.com/web/Portal/page" target="_blank">关于我们</a>
+                <a href="http://wap.snslearn.com/web/Portal/page" target="_blank">雨校产品下载</a>
+                <button class="button-set">点击设置</button>
+            </div>
+            <!-- 五.服务窗口 -->
+            <div class="service service-content cont">
+                <div class="service-box">
+                    <img src="imgs/code_02.jpg" >
+                    <p>扫码关注服务号获得更多便捷体验</p>
+                </div>
+                <img src="imgs/woman.jpg" >
+                <button class="button-set">点击设置</button>
+            </div>
+            <!-- 六.登录窗口 -->
+            <div class="sign sign-content cont">
+                <div class="sign-mode">
+                    <p>手机登录<span></span></p> 
+                    <p>二维码登录 <span></span></p>
+                    <p>账号登录 <span></span></p>
+                    <p>人脸登录 <span></span></p>
+                    <p>教育ID登录<span></span></p>
+                </div>
+                <div class="sign-box">
+                    <div class="sign-acc sign-phone">
+                        <label for="signCode"><input type="text" id="signPhone" placeholder="手机"></label>
+                        <label for="signPass"><input type="password" id="signVerifi" placeholder="验证码"></label>
+                        <button>登录</button>
+                        <a class="iconfont" href="#">&#xe646; 下载手机客户端</a>
+                        <a class="iconfont" href="#">&#xe72b; 手机验证登录指导</a>
+                    </div>
+                    <div class="sign-code">
+                        <p>打开客户端选择"扫一扫"进行扫码登录</p>
+                        <img src="imgs/code_01.jpg" ></br>
+                        <a class="iconfont" href="#">&#xe646; 下载手机客户端</a>
+                        <a class="iconfont" href="#">&#xe72b; 扫码登录指导</a>
+                    </div>
+                    <div class="sign-acc sign-account">
+                        <label for="signCode"><input type="text" id="signCode" placeholder="账号"></label>
+                        <label for="signPass"><input type="password" id="signPass" placeholder="密码"></label>
+                        <a href="#">忘记密码?</a>
+                        <button>登录</button>
+                        <a class="iconfont" href="#">&#xe646; 下载手机客户端</a>
+                        <a class="iconfont" href="#">&#xe72b; 账号登录指导</a>
+                    </div>
+                    <div class="sign-face">
+                        <img src="imgs/face.png" >
+                    </div>
+                    <div class="sign-acc sign-id">
+                        <label for="signCode"><input type="text" id="signID" placeholder="教育ID"></label>
+                        <label for="signPass"><input type="password" id="signIdpass" placeholder="密码"></label>
+                        <button>登录</button>
+                        <a class="iconfont" href="#">&#xe646; 下载手机客户端</a>
+                        <a class="iconfont" href="#">&#xe72b; 教育ID登录指导</a>
+                    </div>
+                </div>
+                <button class="button-set">点击设置</button>
+            </div>
+        </div>
+        <!-- h5登录窗口 -->
+        <div class="login-window h5 cont" style="background:url('imgs/h5_bg.jpg') no-repeat;">
+            <img src="imgs/logo.png" >
+            <div>
+                <label for="h5Input1"><input type="text" id="h5Input1" placeholder="手机号"><p class="iconfont">&#xe651;</p></label>
+                <label for="h5Input1"><input type="text" id="h5Input2"placeholder="请输入验证码"><p class="iconfont">&#xe61e;</p></label>
+                <br/>
+                <a href="#">忘记密码?</a>
+                <button class="h5-sign" onclick="h5Page(0)">短信验证码登录</button>
+            </div>
+            <div>
+                <label for="h5Input3"><input type="text" id="h5Input3" placeholder="账号"><p class="iconfont">&#xe617;</p></label>
+                <label for="h5Input4"><input type="password" id="h5Input4" placeholder="密码"><p class="iconfont">&#xe63a;</p></label>
+                <a href="#">忘记密码?</a>
+                <button class="h5-sign" onclick="h5Page(1)">账号密码登录</button>
+            </div>
+            <button >登录</button>
+            <button class="button-set">点击设置登录页面背景图</button>
+        </div>
+        </div>
+    </div>
+    <!-- 右侧弹窗 -->
+    <div class="popup">
+        <div id="popupBox"></div>
+        <div class="popup-btu iconfont" onclick="popMove()">&#xe62c;</div>
+    </div>
+    <!-- 模块区 -->
+    <!-- 一.LOGO设置 -->
+    <div class="mod">
+        <div class="logo set-logo">
+            <h3>设置登录页logo</h3>
+            <div class="radio-input">
+                <input type="radio" name="logo" id="logo1" onclick="showLogo()">
+                <label for="logo1">自定义上传</label>
+                <input type="radio" name="logo" id="logo2" checked="checked" onclick="offLogo()">
+                <label for="logo2">使用区域/学校系统logo</label>
+            </div>
+            <div class="upload-input">
+                <div class="upload-box">
+                    <label for="img_file"><img src="imgs/logo.png"  id="img_id"></label>
+                    <p>请点击上传2M以内，png格式图片</p>
+                </div>
+                <input type="file" onchange="showImg(this)" id="img_file">
+            </div>
+            <button class="confirm" onclick="setImg()">确认</button>
+        </div>
+    </div>
+    <!-- 二.背景图片设置 -->
+    <div class="mod">
+        <div class="background set-background">
+            <h3>设置背景图</h3>
+            <div class="upload-input">
+                <div class="upload-box">
+                    <label for="bg_file"><img src="imgs/bg_start.jpg"  id="bg_id"></label>
+                    <p>请点击上传2M以内，尺寸为1920X1080的图片</p>
+                </div>
+                <input type="file" onchange="showBacground(this)" id="bg_file">
+            </div>
+            <button class="confirm" onclick="setBacground()">确认</button>
+        </div>
+    </div>
+    <!-- 三.标题设置 -->
+    <div class="mod">
+        <div class="title set-title">
+            <ul>
+                <li>标题内容</li>
+                <li><input type="text" name="content" placeholder="输入标题内容" maxlength = "20" oninput="showLength(this)" ><p >0/20</p></li>
+                <li>标题颜色</li>
+                <li><input type="text" name="rgb" placeholder="#2fa2fe"> <input type="color" name="color" value="#2fa2fe" onclick="cleadnShadow(0)" onchange="getColor(this,0)"> </li>
+                <li>字体大小</li>
+                <li><input type="text" name="size" placeholder="40"></li>
+            </ul>
+            <button class="confirm" onclick="setTitle(0)">确认</button>
+        </div>
+    </div>
+    <div class="mod">
+        <div class="title set-title">
+            <ul>
+                <li>标题内容</li>
+                <li><input type="text" name="content" placeholder="输入标题内容" maxlength = "20" oninput="showLength(this)"><p>0/20</p></li>
+                <li>标题颜色</li>
+                <li><input type="text" name="rgb" placeholder="#2fa2fe"> <input type="color" name="color" value="#2fa2fe" onclick="cleadnShadow(0)" onchange="getColor(this,0)"> </li>
+                <li>字体大小</li>
+                <li><input type="text" name="size" placeholder="13"></li>   
+            </ul>
+            <button class="confirm" onclick="setTitle(1)">确认</button>
+        </div>
+    </div>
+    <div class="mod">
+        <div class="title set-title">
+            <ul>
+                <li>标题内容</li>
+                <li><input type="text" name="content" placeholder="输入标题内容" maxlength = "20" oninput="showLength(this)"><p>0/20</p></li>
+                <li>标题颜色</li>
+                <li><input type="text" name="rgb" placeholder="#2fa2fe"> <input type="color" name="color" value="#2fa2fe" onclick="cleadnShadow(0)" onchange="getColor(this,0)"> </li>
+                <li>字体大小</li>
+                <li><input type="text" name="size" placeholder="18"></li>              
+            </ul>
+            <button class="confirm" onclick="setTitle(2)">确认</button>
+        </div>
+    </div>
+    <!-- 四.链接设置 -->
+    <div class="mod">
+        <div class="link set-link">
+            <ul>
+                <li>链接内容设置</li>
+                <li class="links iconfont">
+                    <input type="checkbox" name="setLink"class="check" checked="checked" onclick="checkLink(this)"><p  class="link-page"  data-text ="返回首页" >返回首页</p>
+                    <p class="link-site" data-text = "http://wap.snslearn.com/web/Portal/page" >http://wap.snslearn.com/web/Portal/page</p> 
+                    <p class="modify iconfont" onclick="modify(this)">&#xe605;</p><p class="delete iconfont" onclick="del(this)">&#xe60e;</p>
+                    <button class="link-determine" onclick="linkDetermine(this)" >确定</button><button class="link-cancel" onclick="linkCancel(this)">取消</button>
+                </li>
+                <li class="links iconfont">
+                    <input type="checkbox" name="setLink" class="check" checked="checked" onclick="checkLink(this)"><p class="link-page"  data-text ="关于我们">关于我们</p>
+                    <p class="link-site" data-text = "http://wap.snslearn.com/web/Portal/page">http://wap.snslearn.com/web/Portal/page</p>
+                    <p class="modify iconfont" onclick="modify(this)">&#xe605;</p><p class="delete iconfont" onclick="del(this)">&#xe60e;</p>
+                    <button class="link-determine" onclick="linkDetermine(this)" >确定</button><button class="link-cancel" onclick="linkCancel(this)">取消</button>
+                </li>
+                <li class="links iconfont">
+                    <input type="checkbox" name="setLink" class="check" checked="checked" onclick="checkLink(this)"><p class="link-page"  data-text ="雨校产品下载">雨校产品下载</p>
+                    <p class="link-site" data-text = "http://wap.snslearn.com/web/Portal/page">http://wap.snslearn.com/web/Portal/page</p> 
+                    <p class="modify iconfont" onclick="modify(this)">&#xe605;</p><p class="delete iconfont" onclick="del(this)">&#xe60e;</p>
+                    <button class="link-determine" onclick="linkDetermine(this)">确定</button><button class="link-cancel" onclick="linkCancel(this)">取消</button>
+                </li>
+                <li >
+                    <button id="addLinnk" onclick="addLinnk(this)">添加自定义链接</button>
+                </li>
+            </ul>
+            <ul>
+                <li>链接字体样式</li>
+                <li><span>默认颜色</span><input type="text" name="rgb" placeholder="#555f69"> <input type="color" name="color" value="#555f69" onclick="cleadnShadow(0)" onchange="getColor(this,0)"> </li>
+                <li><span>悬浮颜色</span><input type="text" name="rgb" placeholder="#2fa2fe"> <input type="color" name="color" value="#2fa2fe" onclick="cleadnShadow(1)" onchange="getColor(this,1)"> </li>
+            </ul>
+            <button class="confirm" onclick="setLink(this)">确认</button>
+        </div>
+    </div>
+    <!-- 五.服务窗口设置 -->
+    <div class="mod">
+        <div class="service set-service">
+            <ul>
+                <li>服务窗口二维码控制</li>
+                <li>
+                    <input type="checkbox" name="setService" class="check" checked="checked" onclick="serviceOn()"> <span>是否显示</span> 
+                    <div class="service-img">
+                        <label for="ser_file"><img src="imgs/logo2.png"  id="ser_id"></label>
+                    </div>
+                    <p>请点击上传2M以内，png格式图片</p>
+                    <input type="file" onchange="showService(this)" id="ser_file">
+                </li>
+                <li>服务窗口文字描述</li>
+                <li><input type="text" name="describe" placeholder="输入文字描述" ></li>
+                <li>服务窗口文字描述</li>
+                <li><input type="text" name="rgb" placeholder="#2fa2fe"> <input type="color" name="color" value="#2fa2fe" onclick="cleadnShadow(0)" onchange="getColor(this,0)"></li>
+            </ul>
+            <button class="confirm" onclick="setService(this)">确定</button>
+        </div>
+    </div>
+    <!-- 六.登录窗口设置 -->
+    <div class="mod">
+        <div class="sign set-sign">
+            <ul>
+                <li class="sign-title">登录方式</li>
+                <li><input type="checkbox" name="setSign" check = "0"  class="check" onclick="checkSign(this)"><span>手机验证码登录</span></li>
+                <li><input type="checkbox" name="setSign" check = "1"  class="check" checked="checked" onclick="checkSign(this)"><span>扫码登录</span></li>
+                <li><input type="checkbox" name="setSign" check = "1"  class="check" checked="checked" onclick="checkSign(this)"><span>账号密码登录</span></li>
+                <li><input type="checkbox" name="setSign" check = "1"  class="check" checked="checked" onclick="checkSign(this)"><span>人脸识别登录</span></li>
+                <li><input type="checkbox" name="setSign" check = "0"  class="check" onclick="checkSign(this)"><span>教育ID登录</span></li>
+                <br/> <br/>
+                <li class="sign-title">菜单默认状态</li>
+                <li>字体颜色<input type="text" name="rgb" placeholder="#777777"> <input type="color" name="color" value="#777777" onclick="cleadnShadow(0)" onchange="getColor(this,0)"></li>
+                <li class="sign-title">菜单悬浮状态</li>
+                <li>字体颜色<input type="text" name="rgb" placeholder="#777777"> <input type="color" name="color" value="#777777" onclick="cleadnShadow(1)" onchange="getColor(this,1)"></li>
+                <li>选中标识<input type="text" name="rgb" placeholder="#ffffff"> <input type="color" name="color" value="#ffffff" onclick="cleadnShadow(2)" onchange="getColor(this,2)"></li>
+                <li class="sign-title">菜单点击状态</li>
+                <li>字体颜色<input type="text" name="rgb" placeholder="#2fa2fe"> <input type="color" name="color" value="#2fa2fe" onclick="cleadnShadow(3)" onchange="getColor(this,3)"></li>
+                <li>选中标识<input type="text" name="rgb" placeholder="#2fa2fe"> <input type="color" name="color" value="#2fa2fe" onclick="cleadnShadow(4)" onchange="getColor(this,4)"></li>
+                <li class="sign-title">登录框样式</li>
+                <li>背景颜色<input type="text" name="rgb" placeholder="#ffffff"> <input type="color" name="color" value="#ffffff" onclick="cleadnShadow(5)" onchange="getColor(this,5)"></li>
+            </ul>
+            <button class="confirm" onclick="setSign(this)">确定</button>
+        </div>
+    </div>
+    <!-- 七.h5背景设置 -->
+    <div class="mod">
+        <div class="background1 set-background1">
+            <h3>设置背景图</h3>
+            <div class="upload-input">
+                <div class="upload-box">
+                    <label for="h5_file"><img src="imgs/h5_bg.jpg"  id="h5_id"></label>
+                    <p>请点击上传2M以内，尺寸为425x755的图片</p>
+                </div>
+                <input type="file" onchange="showBacground1(this)" id="h5_file">
+            </div>
+            <button class="confirm" onclick="setBacground1()">确认</button>
+        </div>
+    </div>
+    </div>
+    <script src="script/header.js"></script>
+    <script src="script/popup.js"></script>
+    <script src="script/moudular01_logo.js"></script>
+    <script src="script/moudular02_bg.js"></script>
+    <script src="script/moudular03_title.js"></script>
+    <script src="script/modular04_link.js"></script>
+    <script src="script/modular05_service.js"></script>
+    <script src="script/moudular06_sign.js"></script>
+    <script src="script/moudular07_h5.js"></script>
+</body>
+</html>
