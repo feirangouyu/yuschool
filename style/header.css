@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+    font-family: "微软雅黑";
+    
+}
+
+a:link,a:visited {
+    color:#555f69;
+    text-decoration: none;
+}
+
+body {
+    overflow-x: hidden;
+    width: 1920px;
+    background-color: #f3f4f6;
+}
+
+.header {
+    height: 60px;
+    font-size: 14px;
+    color: #555f69;
+    border-bottom: 1px solid #e9eff4;
+    box-shadow: #cadaee3a 2px 1px 5px 1px ;
+    background-color: white;
+}
+
+.header > div {
+    float: left;
+}
+
+.header > div:nth-child(1) {
+    margin:15px 0px 0px 90px;
+}
+
+.header > div:nth-child(1) .iconfont {
+    font-size: 30px;
+}
+
+.header > div:nth-child(2) {
+    margin-top: 20px;
+    font-size:15px
+}
+
+.header > div:nth-child(3) {
+    width: 33px;
+    margin:20px 45px auto 640px;
+}
+
+.header > div:nth-child(4) {
+    width: 33px;
+    margin:20px 690px auto 0px;
+}
+
+.header #H5 {
+    text-align: center;
+}
+
+
+/* 页面开关 */
+.header .on div:nth-child(1), .header .shut div:nth-child(1){
+    cursor: pointer;
+}
+
+.header .on div:nth-child(1) {
+    color:  #2fa2fe;
+}
+.header .on div:nth-child(2),.header .shut div:nth-child(2) {
+    width: 33px;
+    height: 4px;
+    margin-top: 17px;
+    background-color: #2fa2fe;
+    border-radius: 1000px;
+    color: #2fa2fe;
+}
+
+.header .shut div:nth-child(2) {
+    display: none;
+}
+
+.header #preview, .header #preserve {
+    height: 34px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.header #preview {
+    width: 74px;
+    margin:15px 10px auto 0px;
+    background-color:#f4faff;
+    border:1px solid #88caff;
+    color: #2fa2fe;
+}
+.header #preserve {
+    width: 92px;
+    background-color: #2fa2fe;
+    border:none;
+    color: white;
+}
+
+

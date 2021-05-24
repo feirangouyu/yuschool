@@ -1,0 +1,465 @@
+.content {
+    position: relative;
+    width: 1720px;
+    height: 960px;
+    margin: 20px 95px;
+}
+
+/* 边框悬浮按钮设置 */
+button.button-set {
+    position: absolute;
+    display: none;
+   
+    outline: none;
+    background-color: rgb(227,244,254);
+    color: #2fa2fe;
+    border: 1px dashed #2fa2fe;
+    line-height: 25px;
+}
+
+/* 一.LOGO */
+.logo-content {
+    position: relative;
+    float: left;
+    z-index: 1;
+    width: 60px;
+    height: 75px;
+    padding: 5px;
+    margin: 45px 10px auto 100px;
+    border: 1px dashed #2fa1fe00;
+}
+
+.logo-content img {
+    width: 55px;
+    height: 70px;
+}
+
+.logo-content .button-set {
+    width: 100px;
+    height: 30px;
+    top:-30px;
+    left: -15px;
+}
+
+.logo-content:hover {
+    border: 1px dashed #2fa2fe;
+}
+
+.logo-content:hover .button-set {
+    display: block;
+}
+
+/* 二.背景图片 */
+.background-content {
+    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+
+    width:1720px;
+    height: 960px;
+    border: 1px dashed #2fa1fe00;
+    border-top: 1px solid #2fa2fe; 
+}
+
+.background-content .button-set {
+    top:0px;
+    left: -40px;
+
+    width:40px;
+    height: 240px;
+    padding: 12px;
+    line-height: 20px;
+    letter-spacing: 15px;
+} 
+
+.background-content:hover {
+    border: 1px dashed #2fa2fe;
+}
+
+.background-content:hover .button-set{
+    display: block;
+}
+
+
+/* 三.标题 */
+#title-box {
+    float: left;
+    margin:45px 0px 0px -10px;
+}
+
+.title-content {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding:0px 5px;
+    font-weight: bold;
+    color: #2fa2fe;
+    border: 1px dashed #2fa1fe00;
+}
+
+.title-fir {
+    font-size: 40px;
+    letter-spacing: 6px;
+}
+
+.title-fir .button-set {
+    top: -27px;
+    left: -1px;
+    border-bottom: none;
+}
+
+.title-sec {
+    font-size: 13px;
+}
+
+.title-sec .button-set {
+    bottom: -27px;
+    left: -1px;
+    border-top: none;
+}
+
+.title-thi {
+    margin: 55px 5px;
+    font-size: 18px;
+}
+
+.title-thi .button-set {
+    top: -27px;
+    left: -1px;
+    border-bottom: none;
+}
+
+.title-content:hover {
+    border: 1px dashed #2fa2fe;
+}
+
+.title-content:hover .button-set {
+    display: block;
+}
+
+.title-content .title-thi > span {
+    position: relative;
+}
+
+
+
+
+/* 四.链接 */
+.link-content {
+    position: absolute;
+    top:45px;
+    right: 110px;
+    padding: 10px;
+    height: 30px;
+    border: 1px dashed #2fa1fe00;
+
+}
+
+.link-content a {
+    display: inline-block;
+    margin-left: 20px;
+    color: #555f69;
+    text-decoration: none;
+}
+
+.link-content .button-set {
+    top: -27px;
+    right: 0px;
+}
+
+.link-content a:hover {
+    color: #2fa2fe;
+}
+
+.link-content:hover {
+    border: 1px dashed  #2fa2fe;
+    
+}
+
+.link-content:hover .button-set {
+    display: block;
+}
+
+
+/* 五.服务窗口 */
+.service-content {
+    position: relative;
+    position: absolute;
+    right: 0px;
+    top:310px ;
+
+    width: 90px;
+    height: 125px;
+    padding: 15px 10px 25px 20px;
+    background-color: white;
+    border: 1px dashed white;
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: #d4dae0 -2px 5px 10px 1px;
+    color: #555f69;
+    font-size: 14px;
+}
+
+.service-content > img {
+    position: absolute;
+    top:-100px;
+    left: 20px;
+}
+
+.service-content .service-box > img {
+    width: 77px;
+    height: 77px;
+    margin-bottom: 5px;
+}
+
+.service-content:hover {
+    border: 1px dashed  #2fa2fe;
+}
+
+.service-content .button-set {
+    top:20px;
+    left: -25px;
+
+    width: 25px;
+    padding: 5px;
+}
+
+.service-content:hover .button-set {
+    display: block;
+}
+
+/* 六.登录窗口 */
+.sign-content {
+    position: absolute;
+    top:170px;
+    left: 700px;
+    width: 320px;
+    height: 310px;
+    padding: 30px 40px 60px;
+    background-color: white;
+    border: 1px dashed white;
+    border-radius: 15px;
+    box-shadow:rgba(10, 10, 10, 0.178) 4px 4px 10px 1px ;
+    color: #777777;
+}
+
+.sign-content:hover {
+    border: 1px dashed #2fa2fe;
+}
+
+.sign-content .button-set {
+    top:-28px;
+    width: 120px;
+    letter-spacing: 10px;
+}
+
+.sign-content:hover .button-set {
+    display: block;
+}
+
+.sign-content .sign-box {
+    width: 300px;
+    height: 250px;
+    margin: 30px auto;
+    line-height: 50px;
+
+}
+
+.sign-mode > p:nth-of-type(1) {
+    color: #2fa2fe;
+}
+
+.sign-mode {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sign-mode > p {
+    position: relative;
+    cursor: pointer;
+}
+
+.sign-mode > p span {
+    position: absolute;
+    display: none;
+    top:45px;
+    left: -2px;
+    width: 68px;
+    height: 3px;
+    background-color: #2fa2fe;
+}
+
+.sign-mode > p:nth-of-type(2) span{
+    display: block;
+    left: 0px;
+    width: 80px;
+    height: 3px;
+}
+
+.sign-mode > p:nth-of-type(1),.sign-mode > p:nth-last-child(1) {
+    display: none;
+}
+
+.sign-content .sign-code img {
+    width: 150px;
+}
+
+.sign-content .sign-code a {
+    text-decoration: none;
+    color: #777777;
+}
+.sign-content .sign-code a:nth-of-type(2){
+    margin: 0px 20px;
+}
+
+ .sign-acc label{
+    display: block;
+}
+
+ .sign-acc input {
+    width: 280px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #bfc2c5;
+    outline: none;
+}
+ .sign-acc label+a:nth-of-type(1)  {
+    margin-left: 220px;
+    font-size: smaller;
+    text-decoration: none;
+    color: #777777;
+}
+.sign-acc a.iconfont {
+    display: inline-block;
+    text-decoration: none;
+    color: #777777;
+}
+.sign-acc a:nth-last-of-type(2) {
+    margin-right: 10px;
+}
+
+.sign-account a:nth-last-of-type(2) {
+    margin-right: 40px;
+}
+ .sign-acc button,.h5 > button:nth-last-of-type(2) {
+    width: 290px;
+    height: 40px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color:#2fa2fe;
+    outline: none;
+    color: white;
+}
+
+.sign-content .sign-face img {
+    width: 200px;
+    margin-top: 40px;
+}
+
+
+.sign-content .sign-code {
+    text-align: center;
+}
+
+.sign-content .sign-acc {
+    display: none;
+}
+
+.sign-content .sign-face {
+    display: none;
+    text-align: center;
+}
+
+
+/* h5 */
+.h5 {
+    display: none;
+    position: relative;
+    width: 426px;
+    height: 755px;
+    margin-left: 650px;
+    text-align: center;
+    color: #777777;
+    border: 1px dashed white;
+}
+
+.h5 img {
+    width: 70px;
+    margin: 70px auto 60px;
+}
+
+
+.h5 > div:nth-of-type(2) {
+    display: none;
+}
+
+.h5 input {
+    width: 310px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f8fc;
+    outline: none;
+}
+
+.h5 div a:nth-of-type(1) {
+    margin-right: 185px;
+}
+
+.h5 a {
+    font-size: smaller;
+    text-decoration: none;
+    color: #777777;
+}
+
+.h5 > button:nth-last-of-type(2) {
+    width: 360px;
+    box-shadow: #2fa2fe 2px 2px 2px 2px;
+}
+
+.h5 .h5-sign {
+    border: none;
+    background-color: #2fa1fe00;
+    outline: none;
+    cursor: pointer;
+    color: #777777;
+}
+
+.h5:hover {
+    border: 1px dashed #2fa2fe;
+}
+
+.h5 .button-set {
+    top: 0px;
+    left: -40px;
+    width:40px;
+    height: 240px;
+    padding: 12px;
+    line-height: 20px;
+    letter-spacing: 15px;
+}
+
+.h5:hover .button-set {
+    display: block;
+}
+
+.h5 .iconfont {
+    position: absolute;
+    top:14px;
+    left: 48px;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.h5 label {
+    position: relative;
+    display: block;
+
+}
+
+
+
